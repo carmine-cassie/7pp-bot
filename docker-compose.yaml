@@ -1,0 +1,4 @@
+services:
+  7pp:
+    build: .
+    env_file: .env
