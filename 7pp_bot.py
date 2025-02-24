@@ -74,7 +74,7 @@ MAX_DICE = 100
 class Client(discord.Client):
     # Set our discord presence to "Listening for !cast XdY"
     async def on_ready(self):
-        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="for !cast XdY"))
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="!cast XdY"))
 
     # When we receive a message
     async def on_message(self, message: discord.Message):
